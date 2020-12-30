@@ -5,8 +5,17 @@ body{
   color: #333;
 }
 
-header {
-  background: #f59a00;
+
+.menu{
+  display: flex;
+}
+
+.sp-menu{
+  margin-left: auto;
+}
+
+.container {
+  background:skyblue;
   color: #fff;
   text-align: center;
   padding-top: 63px;
@@ -163,3 +172,4 @@ footer{
     width: 250px;
   }
 }
+
