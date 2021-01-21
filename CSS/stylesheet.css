@@ -1,9 +1,19 @@
 body{
   margin: 0;
+  padding-top:20px;
   font-size:16px;
   font-family: verdana, sans-serif;
   color: #333;
+  background-color: #323135;
 }
+
+.no-color-change{
+  color: #333;
+}
+.no-change-white{
+  color:white;
+}
+
 
 .message{
   width:300px;
@@ -72,7 +82,8 @@ body{
   bottom: 0;
   right:0;
   left:0;
-  background: rgba(255,255,255,0.95);
+  background: #333;
+  color: white;
   padding: 64px;
   text-align: center;
   opacity: 0;
@@ -146,6 +157,9 @@ body{
 .overlay.show li:nth-child(3) {
   transition-delay: .5s;
 }
+.overlay.show li:nth-child(4) {
+  transition-delay: .6s;
+}
 
 .pc-menu {
   display: none;
@@ -183,6 +197,11 @@ header p {
     transform: none;
     opacity: 1;
   }
+}
+
+header a{
+  text-decoration: none;
+  color:white;
 }
 
 header h1{
@@ -238,8 +257,6 @@ header img {
   /* vertical-align: bottom; */
   opacity: 0;
   filter: grayscale(100%);
-
-  cursor: pointer;
   transition-duration: 0.5s;
 
   animation: img-slide 3s forwards;
@@ -299,12 +316,13 @@ header img:hover{
 
 .features{
   text-align: center;
-  background-color:gray;
+  background-color:rgb(187,187,187);
   padding-bottom: 30px;
 }
 
 .features img{
-  width: 100%;
+  width: 300px;
+  margin-bottom:30px
 }
 
 
@@ -339,6 +357,11 @@ h1:hover::after {
 .members{
   text-align: center;
   background:rgb(227,227,227);
+}
+
+.members a{
+  text-decoration: none;
+  color:#333;
 }
 
 .members >  h1{
@@ -447,6 +470,10 @@ h1:hover::after {
   margin: 64px 0;
   display: inline-block;
   position: relative;
+}
+
+.call-to-action a{
+  text-decoration: none;
 }
 
 .call-to-action  h1::after {
@@ -577,6 +604,10 @@ footer{
     margin: 0;
     padding:64 0 0 0 ;
   }
+
+  header .pic{
+    margin-top:160px;
+  }
   
   .features {
     width: 30%;
@@ -584,11 +615,14 @@ footer{
     padding:0;
   }
 
-  .container{
-  }
+
+.features img{
+  width: 100%;
+}
 
   .pc{
     width:35%;
+    background: white;
   }
 
   .members {
@@ -631,7 +665,7 @@ footer{
 }
 
 .features .pic {
-  margin: 20px auto;
+  margin: 100px auto 20px auto;
   height: 150px;
   position: relative;
   text-align: center;
@@ -645,7 +679,9 @@ footer{
 
 .gallery {
   margin: 0 44px 0 44px;
+  border: #333 solid 4px;
   background: gray
+
 }
  
 .gallery-cell {

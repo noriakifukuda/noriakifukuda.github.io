@@ -1,0 +1,268 @@
+@media screen and (max-width:980px){
+  body{
+    margin: 60px 40px 60px 40px;
+    font-family:Georgia, 游明朝, YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  }
+
+  .container {
+    max-width:700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-left{
+  clear:both;
+  }
+
+  .header-right{
+  margin-top: 10px;
+  width:100%;
+  clear:both;
+  }
+
+  .gnav li {
+    float: left;
+    font-size: 17px;
+    position: relative;
+    padding:0 34px 0 0;
+}
+
+.gnav li ul{
+position: absolute;
+top: 40px;
+left: -60px;
+visibility: hidden;
+}
+
+  .header-search {
+   margin-left: 0;
+   float: right;
+   width:25px;
+   height:25px;
+  }
+
+  .nakamidasi{
+    font-size: 23px;
+    margin-bottom: 110px;
+    line-height:50px;
+  }
+
+  .contents{
+    display:block;
+  }
+
+  .contents-naka{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+
+
+  .f-contents{
+    margin-top: 60px;
+    margin-bottom: 100px;
+    display: block;
+  }
+
+  .f-content1{
+    width: 100%;
+  }
+  .f-content1 h2 {
+    font-size: 20px;
+    padding-top: 25px;
+    margin:40px 5px 10px 5px;
+  }
+
+
+  .f-content2{
+    width: 100%;
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+
+  h3 {
+    font-weight: bold;
+    margin-top: 80px;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .f-content3{
+    width: 100%;
+    padding-right: 0%;
+  }
+
+  .f-content4{
+    width: 100%;
+  }
+
+  .f-search{
+    width: 300px;
+    margin-top: 50PX;
+    margin-bottom: -20px;
+    padding: 10px;
+    border: solid 1px #eeeeee
+  }
+
+  .end {
+    margin: 0px 0 0px 0;
+    display: block;
+  }
+
+  .copy {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width:780px){
+/* スマホ用CSS -------------- */
+body{
+  margin: 45px 20px 45px 20px;
+}
+
+.container {
+  max-width: 700px;
+
+}
+
+.top-fixed{
+  position: fixed;
+  top:30px;
+  right: 50px;
+  z-index: 1;
+  display: block;
+}
+
+p {
+  font-size: 13px;
+}
+
+a{
+  font-size: 13px;
+}
+
+h2{
+  font-size: 20px;
+}
+
+h1{
+  font-size: 30px;
+}
+
+
+header a{
+  font-size: 13px;
+}
+
+header p {
+  float:left;
+  color:  #777777;
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+.header-right{
+display: none;
+}
+
+.header-img{
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.nakamidasi{
+  font-size: 23px;
+  margin-bottom: 110px;
+  line-height:50px;
+}
+
+.contents{
+  display:block;
+}
+
+.contents-naka{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.button1 {
+  display: none;
+}
+.button2{
+  display: none;
+}
+.button3{
+  display: none;
+}
+
+.f-contents{
+  margin-top: 60px;
+  margin-bottom: 100px;
+  display: block;
+}
+
+.f-content1{
+  width: 100%;
+}
+
+
+
+
+.f-content2{
+  width: 100%;
+  font-size: 15.8px;
+  padding-right: 0%;
+  padding-left: 0%;
+}
+
+.f-content3{
+  width: 100%;
+  padding-right: 0%;
+}
+
+.f-content4{
+  width: 100%;
+}
+
+.f-search{
+  width: 300px;
+  margin-top: 50PX;
+  margin-bottom: -20px;
+  padding: 10px;
+  font-size: 13px;
+  border: solid 1px #eeeeee
+}
+
+
+footer {
+  font-size: 13px;
+}
+
+h3{
+  font-size: 13px;
+}
+
+.f-content1 h2 {
+  font-size: 15px;
+}
+
+.f-contents p {
+  font-size: 13px;
+}
+
+.end {
+  margin: 0px 0 0px 0;
+  display: block;
+}
+
+.copy {
+  margin-top: 20px;
+  margin-left: 0px;
+  font-size: 13px;
+}
+
+}

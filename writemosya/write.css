@@ -1,0 +1,441 @@
+article,aside,details,figcaption,figure,header,hgroup,menu,nav,section {
+  display: block;
+}
+
+
+
+.clear {
+  clear:both;
+}
+
+
+*{
+  box-sizing:border-box;
+
+}
+
+body{
+  margin: 60px 40px 60px 40px;
+  font-family:Georgia, 游明朝, YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+}
+
+.container {
+  max-width:1035px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+  font-size: 36px;
+  margin:0 ;
+}
+
+h2{
+font-size: 22px;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+p{
+color:  #777777;
+font-size:16.8px;
+line-height: 1.8;
+}
+
+ul{
+}
+
+li a {
+  text-decoration: none;
+  color:#444444;
+}
+
+li {
+  list-style-type:none;
+}
+
+/*header*/
+
+
+header a{
+  font-size: 16.884px;
+}
+
+.top-fixed{
+  position: fixed;
+  top:30px;
+  right: 50px;
+  z-index: 1;
+  display: none;
+}
+
+.c-button {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+.p-hamburger {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  margin: auto;
+  border-radius: 50%;
+
+  box-shadow: 0 0 2rem transparent;
+  outline: none;
+  -webkit-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+}
+.p-hamburger:hover,
+.p-hamburger:focus {
+  box-shadow: 0 0 .5rem rgba(255, 255, 255, .5 );
+}
+
+.p-hamburger__line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 18px;
+  height: 2px;
+  background-color: #000000;
+  -webkit-transition: inherit;
+          transition: inherit;
+}
+.p-hamburger__line::before,
+.p-hamburger__line::after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  content: '';
+  -webkit-transition: inherit;
+          transition: inherit;
+}
+.p-hamburger__line::before {
+  top: -5px;
+}
+.p-hamburger__line::after {
+  top: 5px;
+}
+
+.p-hamburger[aria-expanded="true"] .p-hamburger__line {
+  background-color: transparent;
+}
+
+.p-hamburger[aria-expanded="true"] .p-hamburger__line::before,
+.p-hamburger[aria-expanded="true"] .p-hamburger__line::after {
+  top: 0;
+  background-color: #000000;
+}
+
+.p-hamburger[aria-expanded="true"] .p-hamburger__line::before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.p-hamburger[aria-expanded="true"] .p-hamburger__line::after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.u-visuallyHidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.header-left{
+  float:left;
+}
+
+header p {
+  float:left;
+  color:  #777777;
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.header-right{
+  width: 69%;
+float: right;
+margin-top: 25px;
+}
+
+.gnav{
+  padding-left:0px;
+}
+
+.gnav li{
+float: left;
+font-size: 17px;
+position: relative;
+padding: 0 17px;
+}
+
+.gnav li:hover ul li{
+visibility: visible;
+opacity: 1;
+transition: 0.3s;
+}
+
+.gnav li a{
+display: block;
+padding-bottom: 15px;
+}
+
+.gnav li a:hover{
+color: #c49029;
+transition: 0.3s;
+}
+
+.gnav li ul{
+position: absolute;
+top: 40px;
+left: -45px;
+visibility: hidden;
+}
+
+.gnav li li{
+border:solid 1px #e6e6e6;
+width: 190px;
+box-shadow: 0.5px 0.5px #f0f0f0;
+opacity: 0;
+padding: 20px 20px 0 20px;
+background-color: #fff;
+}
+
+.header-search {
+float: right;
+ width:25px;
+ height:25px;
+}
+
+.header-img{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.first-img{
+  margin-top: 60px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 60px;
+  width: 100%;
+  height: 400px;
+  object-fit: cover; /* この一行を追加するだけ！ */
+}
+
+.nakamidasi{
+  font-size: 27px;
+  margin-bottom: 110px;
+  line-height:50px;
+}
+
+/*contents*/
+
+.contents{
+  display: flex;
+}
+
+.contents a {
+  width: 32.5%;
+  color:#777777;
+  margin-top: 8px;
+}
+
+.contents-naka{
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.contents-naka h2:hover{
+color: #c49029;
+transition: 0.3s;
+cursor: pointer;
+}
+
+/*botton*/
+
+.buttons {
+  margin-top: 60px ;
+  margin-bottom: 40px;
+}
+
+.button{
+  padding:15px 20px;
+  color:#777777;
+  border: solid 1px #dddddc;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.button1 {
+  color: #000000;
+  background-color: #eeeeee;
+  font-weight: bold;
+}
+
+/*border*/
+
+.border{
+  margin:30px 0 ;
+  border: solid 1px #e6e6e6;
+  opacity: 0.7;
+}
+
+/*footer*/
+
+footer{
+}
+
+.f-contents{
+  margin-top: 60px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.f-contents p {
+  font-size: 15px;
+}
+
+.f-contents  a{
+  display: inline-block;
+  color:#777;
+  border-bottom: 1px solid #ddd;
+}
+
+.f-contents a:hover {
+  color: #c49029;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.f-content1{
+  width: 25%;
+}
+
+.author-img {
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    width:  100px;       /* ※縦横を同値に */
+    height: 100px;       /* ※縦横を同値に */
+    float:left;
+    margin-right: 15px;
+
+}
+
+.author-icon i{
+  font-size: 24px;
+  padding-right: 0;
+  margin: 0 4px 0 0 ;
+  color:#999;
+}
+
+.fab {
+  cursor: pointer;
+}
+
+.fab:hover{
+  color:#555;
+  transition: 0.5s;
+}
+
+.f-content1 h2 {
+  font-size: 20px;
+  margin:20px 5px 10px 5px;
+}
+
+.f-content2{
+  width: 30%;
+  font-size: 15.8px;
+  padding-right: 4%;
+  padding-left: 6%
+}
+
+
+.f-content3{
+  width: 20%;
+  padding-right: 5%;
+}
+
+.f-content3 p {
+    font-size:15px;
+    margin: 5px 0 10px 0;
+}
+
+.f-content4{
+  width: 25%;
+}
+
+.f-content4 a {
+margin-bottom: 20px;
+}
+
+.f-search{
+  width: 100%;
+  margin-top: 70PX;
+  padding: 10px;
+  font-size: 17px;
+  border: solid 1px #eeeeee
+
+}
+
+.date{
+  font-size: 15.8px;
+
+}
+
+.f-p{
+}
+
+.end {
+  margin: 60px 0 70px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+footer  i{
+color:#999;
+padding: 0 0px 0 0 ;
+margin-right: 12px;
+font-size:26px;
+}
+
+.copy {
+  margin-top: 0px;
+  margin-left: 190px;
+  font-size: 15.8px;
+}
