@@ -321,9 +321,40 @@ header img:hover{
 }
 
 .features img{
-  width: 300px;
+  width: 320px;
   margin-bottom:30px
 }
+
+.features .pic {
+  margin: 100px auto 20px auto;
+  height: 150px;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.features .info{
+  height:150px;
+}
+
+.gallery {
+  margin: 0 44px 0 44px;
+  border: #333 solid 4px;
+  background: gray
+
+}
+ 
+.gallery-cell {
+  height: 500px;
+  width: 100%;
+  padding:10px 50px 10px 50px;
+  vertical-align: middle;
+  background-color:white;
+  counter-increment: gallery-cell;
+}
+
 
 
 .features  h1{
@@ -609,32 +640,50 @@ footer{
     margin-top:160px;
   }
   
-  .features {
+.features {
     width: 30%;
     margin:0;
     padding:0;
-  }
-
-
-.features img{
-  width: 100%;
 }
 
-  .pc{
+.gallery-cell {
+  height: 500px;
+  width: 100%;
+  padding:0px 20px 0px 20px;
+  vertical-align: middle;
+  background-color:white;
+  counter-increment: gallery-cell;
+}
+
+.features .pic {
+  margin: 70px auto 20px auto;
+  height: 150px;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.features img{
+  width: 180px;
+}
+
+.pc{
     width:35%;
     background: white;
-  }
+}
 
-  .members {
+.members {
     width: 100%;
     background: white;
-  }
+}
 
-  .members li{
+.members li{
     display: flex;
     padding-left: 15px;
     padding-right: 15px;
-  }
+}
 
   .pc-about{
     /* width: 100%; */
@@ -662,35 +711,6 @@ footer{
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-.features .pic {
-  margin: 100px auto 20px auto;
-  height: 150px;
-  position: relative;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-.features .info{
-  height:150px;
-}
-
-.gallery {
-  margin: 0 44px 0 44px;
-  border: #333 solid 4px;
-  background: gray
-
-}
- 
-.gallery-cell {
-  height: 500px;
-  width: 100%;
-  padding:10px 50px 10px 50px;
-  vertical-align: middle;
-  background-color:white;
-  counter-increment: gallery-cell;
 }
 
 /* .gallery-cell.pic{
