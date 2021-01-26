@@ -127,7 +127,7 @@ section{
 }
 
 .features{
-    padding: 64px 64px 64px 64px;
+    padding: 64px 16px 64px 16px;
     text-align: center;
     background-color:rgb(187,187,187);
 }
@@ -228,8 +228,13 @@ footer{
   80% {transform:translateY(-300px) scale(3);}
 }
 
-/* @media (min-width: 900px) {
-    .container{
+@media (min-width: 900px) {
+
+    .features{
+        padding: 64px 64px 64px 64px;
+    }
+    
+    /* .container{
         display: flex;
         justify-content: space-around;
     }
@@ -239,5 +244,5 @@ footer{
         border: white solid 5px;
         margin-bottom: 20px;
         padding-bottom: 40px;
-    }
-} */
+    } */
+}

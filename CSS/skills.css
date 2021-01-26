@@ -119,18 +119,14 @@ transition-delay: .5s;
 display: none;
 }
 
-section{
-    /* flex-basis:30%; */
-    border: white solid 5px;
-    margin-bottom: 20px;
-    padding-bottom: 40px;
-}
+
 
 .features{
-    padding: 64px 64px 64px 64px;
+    padding: 64px 16px 64px 16px;
     text-align: center;
     background-color:rgb(187,187,187);
 }
+
 
 .features  h1{
     font-size: 40px;
@@ -143,7 +139,7 @@ section{
     display: inline-block;
     position: relative;
 }
-  
+
 .features h1::after {
     position: absolute;
     bottom: 0px;
@@ -171,17 +167,51 @@ section{
 
 h1:hover::after {
     transform: scale(1, 1);
-  }
+}
 h2:hover::after {
     transform: scale(1, 1);
-  }
+}
+
+ h2.type{
+    margin:0 0 0 0;
+    padding: 0;
+}
+
+.container{
+    position: relative;
+    border: white solid 5px;
+    margin: 40px 0 40px 0;
+    padding: 20px 0 20px 0;
+}
+
+.point-title {
+    position: absolute;
+    padding: 5px 0.5em;
+    /* left: 20px; */
+    left: 100px;
+    right: 100px;
+    margin: auto;
+    top: -23px; /* タイトルの位置を調整 */
+    color: #333; /* タイトルの文字色 */
+    /* font-weight: bold; */
+    /* font-size:0.9em; */
+    background-color: rgb(187,187,187);
+    border: white solid 5px;
+}
+
+section{
+    /* flex-basis:30%; */
+    border: white solid 5px;
+    margin: 20px 5px 20px 5px;
+    padding-bottom: 40px;
+}
 
 .no-color-change{
     color: #333;
 }
 .no-change-white{
     color:white;
-  }
+}
 
 .logo{
     width: 50%;
@@ -257,16 +287,36 @@ footer{
 }
 
 @media (min-width: 900px) {
+    .features{
+        padding: 64px 64px 64px 64px;
+    }
+
+
     .container{
+        /* position: relative;
+        border: white solid 5px; */
+        /* margin-bottom: 40px; */
+        /* padding-bottom: 40px; */
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
     }
+
+    /* .point-title {
+        position: absolute;
+        padding: 0 0.5em;
+        left: 20px;
+        top: -13px; 
+        color: #555555; 
+        font-weight: bold;
+        font-size:0.9em; 
+        background-color: #ffffff;
+      } */
     
     section{
         flex-basis:500px;
         border: white solid 5px;
-        margin-bottom: 20px;
+        margin: 20px 0 20px 0;
         padding-bottom: 40px;
     }
 }
