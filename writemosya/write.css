@@ -235,6 +235,10 @@ padding: 20px 20px 0 20px;
 background-color: #fff;
 }
 
+.gnav li:last-child{
+  float: right;
+}
+
 .header-search {
 float: right;
  width:25px;
