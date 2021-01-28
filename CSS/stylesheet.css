@@ -758,8 +758,8 @@ footer{
 #omikuji {
   width: 100px;
   height: 100px;
-  /* background: #ef454a; */
-  background: #e3e3e3;
+  background: #ef454a;
+  /* background: #e3e3e3; */
   border-radius: 50%;
   margin: 0 auto;
   text-align: center;
@@ -780,4 +780,49 @@ footer{
   margin-bottom: -5px;
   box-shadow: 0 5px 0 #9c9c9c;
   transition-duration: .1s;
+}
+
+/* カレンダー */
+
+table{
+  font-size: 8px;
+  border-collapse: collapse;
+  border: 2px solid #eee;
+}
+
+thead,
+tfoot{
+  background: #eee;
+}
+
+th,
+td{
+  padding: 2px;
+  text-align: center;
+}
+
+tbody td:first-child{
+  color: red;
+}
+tbody td:last-child{
+  color: blue;
+}
+
+tfoot{
+  font-weight: bold;
+}
+
+td.disabled{
+  opacity: 0.3;
+}
+
+td.today{
+  font-weight: bold;
+}
+
+#prev,
+#next,
+#today{
+  cursor: pointer;
+  user-select: none;
 }

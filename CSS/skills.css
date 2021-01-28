@@ -135,7 +135,7 @@ display: none;
     position: relative;
 }
 .features  h2{
-    margin: 64px 0 ;
+    margin: 40px 0 40px 0 ;
     display: inline-block;
     position: relative;
 }
@@ -187,20 +187,16 @@ h2:hover::after {
 .point-title {
     position: absolute;
     padding: 5px 0.5em;
-    /* left: 20px; */
-    left: 100px;
-    right: 100px;
+    left: 80px;
+    right: 80px;
     margin: auto;
     top: -23px; /* タイトルの位置を調整 */
     color: #333; /* タイトルの文字色 */
-    /* font-weight: bold; */
-    /* font-size:0.9em; */
     background-color: rgb(187,187,187);
     border: white solid 5px;
 }
 
 section{
-    /* flex-basis:30%; */
     border: white solid 5px;
     margin: 20px 5px 20px 5px;
     padding-bottom: 40px;
@@ -232,8 +228,8 @@ footer{
 #omikuji {
     width: 100px;
     height: 100px;
-    /* background: #ef454a; */
-    background: #e3e3e3;
+    background: #ef454a;
+    /* background: #e3e3e3; */
     border-radius: 50%;
     margin: 0 auto;
     text-align: center;
@@ -255,6 +251,53 @@ footer{
     box-shadow: 0 5px 0 #9c9c9c;
     transition-duration: .1s;
 }
+
+/* カレンダー */
+
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid #eee;
+  }
+  
+  thead,
+  tfoot{
+    background: #eee;
+  }
+  
+  th,
+  td{
+    padding: 2px;
+    text-align: center;
+    background: rgb(255,255,255, 0.4);
+  }
+  
+  tbody td:first-child{
+    color: red;
+  }
+  tbody td:last-child{
+    color: blue;
+  }
+  
+  tfoot{
+    font-weight: bold;
+  }
+  
+  td.disabled{
+    opacity: 0.4;
+    background: rgb(255,255,255);
+  }
+  
+  td.today{
+    font-weight: bold;
+  }
+  
+  #prev,
+  #next,
+  #today{
+    cursor: pointer;
+    user-select: none;
+  }
 
 #jump:hover{
     animation: buruburu .5s infinite linear;
@@ -293,25 +336,10 @@ footer{
 
 
     .container{
-        /* position: relative;
-        border: white solid 5px; */
-        /* margin-bottom: 40px; */
-        /* padding-bottom: 40px; */
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
     }
-
-    /* .point-title {
-        position: absolute;
-        padding: 0 0.5em;
-        left: 20px;
-        top: -13px; 
-        color: #555555; 
-        font-weight: bold;
-        font-size:0.9em; 
-        background-color: #ffffff;
-      } */
     
     section{
         flex-basis:500px;
